@@ -1,0 +1,19 @@
+{
+  "name": "isp-page",
+  "version": "0.0.1",
+  "description": "isp Page",
+  "main": "index.js",
+  "scripts": {
+    "test": "runMain"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoDevOlmedo/ISP-page.git"
+  },
+  "author": "EDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EduardoDevOlmedo/ISP-page/issues"
+  },
+  "homepage": "https://github.com/EduardoDevOlmedo/ISP-page#readme"
+}
