@@ -13,6 +13,8 @@ html, body {
   overflow: hidden;
   display: none !important;
 }
+.navbar-light .navbar-toggler {
+  color: #fff !important;}
 
 .container {
   display: -webkit-box;
@@ -142,6 +144,7 @@ html, body {
 }
 .col i {
   font-size: 200px;
+  margin-bottom: 60px;
 }
 
 i {
@@ -248,17 +251,6 @@ p {
   background-color: wheat;
 }
 
-.btn-success:hover {
-  background-color: rgb(106, 255, 155) !important;
-  border: none;
-}
-
-.btn-success:active {
-  background-color: white !important;
-  color: black;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-} 
-
 footer .container-fluid {
   text-align: center;
   width: auto;
@@ -287,12 +279,13 @@ footer .container-fluid p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  height: 100%;
   text-align: center;
   margin: 20px;
+  min-height: 100%;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 100px !important;
 }
-
 #calculate label {
   font-size: 2rem;
   margin: 20px;
