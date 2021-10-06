@@ -14,7 +14,7 @@ let downloadTime = () => {
   let velocidad;
   entrada = document.querySelector('input').value
   if(entrada == ''){
-    console.log('Escriba el tamaño de su archivo')
+    showData.innerHTML = 'Escriba el valor de su archivo'
   }
   else {
     switch(true) {
@@ -40,6 +40,7 @@ const calculate = (velocidad,plan) => {
 
 const reset = () => {
   document.querySelector('input').value = 0;
+  showData.innerHTML = 'Su tiempo de descarga será de: '
 }
 
 let showData = document.querySelector('#time')
