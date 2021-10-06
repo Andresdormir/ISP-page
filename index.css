@@ -3,6 +3,11 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
+}
+
+html, body {
+  height: 100%;
 }
 
 .hidden {
@@ -257,6 +262,69 @@ footer .container-fluid .fab {
 }
 footer .container-fluid p {
   margin: 0;
+}
+
+#calculate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+  text-align: center;
+  margin: 20px;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px !important;
+}
+#calculate label {
+  font-size: 2rem;
+  margin: 20px;
+}
+#calculate select, #calculate input {
+  outline: none;
+  border: 1px solid brown;
+  font-size: 1rem;
+  padding: 5px;
+  text-align: center;
+}
+#calculate input {
+  margin-bottom: 20px;
+}
+#calculate label, #calculate button, #calculate input, #calculate h2 {
+  font-family: "Bebas Neue", cursive;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#time {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #EC6120;
+  color: white;
+}
+
+.btncont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
 }
 
 @media (max-width: 900px) {
