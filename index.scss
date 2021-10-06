@@ -124,6 +124,7 @@ body {
 
 i {
   text-align: center;
+
   img {
     width: 50%;
     margin: 0 auto;
@@ -131,15 +132,30 @@ i {
   }
 }
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Bebas Neue', cursive;
+}
 
 
 #carousel {
   padding: 5% 5%;
+  height: 340px;
   text-align: center;
-   h2 {
+
+  h2 {
     margin-top: 20px;
-   }
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
 
 
@@ -148,6 +164,7 @@ i {
 .carousel-item .img-cont {
   width: 200px;
   margin: 0 auto;
+
   img {
     border-radius: 100%;
     object-fit: contain;
@@ -156,19 +173,84 @@ i {
 }
 
 
+#pricing {
+  background-color: $color4;
+  text-align: center;
+
+  h2 {
+    padding-top: 20px;
+  }
+}
+
+.containers {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.div-card {
+  background-color: $color5;
+  width: 300px;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 12px;
+  border: 3px solid white;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+}
 
 
 
+.card-title {
+  font-size: 2rem;
+  color: white;
+  background: #400c0c;
+  border-radius: 12px;
+}
+
+.div-card p {
+  font-size: 1.3rem;
+}
+
+#pricing .btn {
+  width: 100%;
+}
+
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover a {
+  color: black;
+}
+
+.btn-outline-secondary {
+  background-color: wheat;
+}
 
 
+footer .container-fluid {
+  text-align: center;
+  width: auto;
+  background: $color3;
+  color: white;
+  padding: 10px;
+  .fab {
+    margin: 3px;
+  }
+  p {
+    margin: 0;
+  }
+}
 
+@media (max-width: 900px) {
 
-
-
-
-
-
-
+  .div-card:last-of-type {
+    width: 660px;
+  }
+}
 
 @media (max-width: 600px) {
   .text {
@@ -178,5 +260,9 @@ i {
 
   .btn {
     font-size: 1rem;
+  }
+
+  .div-card:last-of-type {
+    width: 300px;
   }
 }
