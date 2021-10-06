@@ -142,7 +142,6 @@ html, body {
 }
 .col i {
   font-size: 200px;
-  margin-bottom: 60px;
 }
 
 i {
@@ -248,6 +247,17 @@ p {
 .btn-outline-secondary {
   background-color: wheat;
 }
+
+.btn-success:hover {
+  background-color: rgb(106, 255, 155) !important;
+  border: none;
+}
+
+.btn-success:active {
+  background-color: white !important;
+  color: black;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+} 
 
 footer .container-fluid {
   text-align: center;
