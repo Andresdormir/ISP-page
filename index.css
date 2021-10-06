@@ -7,6 +7,7 @@ body {
 
 .hidden {
   overflow: hidden;
+  display: none !important;
 }
 
 .container {
@@ -29,4 +30,161 @@ body {
 .animate__fadeIn {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+}
+
+.bg-light {
+  background: #142749;
+}
+
+.navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar {
+  background: #142749;
+}
+
+.navbar-nav a,
+.navbar-brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  opacity: 0.5;
+}
+
+.navbar-toggler {
+  outline: none;
+}
+.navbar-toggler .fa-bars {
+  font-size: 30px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.animate__fadeIn {
+  font-family: "Bebas Neue", cursive;
+  font-size: 34px !important;
+}
+
+.container-fluid button.navbar-toggler {
+  border-color: transparent;
+}
+
+.col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contains {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  gap: 10px;
+}
+.contains .btn {
+  color: white;
+  border-color: black;
+  max-width: 200px;
+  min-width: 100px;
+  font-size: 1.6rem;
+}
+
+#About-Us {
+  background-color: #999497;
+  padding: 8%;
+}
+#About-Us .containerxd {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Bebas Neue", cursive;
+  font-size: 34px !important;
+  margin: 0px;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.col i {
+  font-size: 200px;
+  margin-bottom: 60px;
+}
+
+i {
+  text-align: center;
+}
+i img {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#carousel {
+  padding: 5% 5%;
+  text-align: center;
+}
+#carousel h2 {
+  margin-top: 20px;
+}
+
+.carousel-item h2 {
+  font-size: 40px;
+}
+
+.carousel-item p {
+  font-size: 20px;
+}
+
+.carousel-item .img-cont {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.carousel-item .img-cont img {
+  border-radius: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: inherit;
+}
+
+@media (max-width: 600px) {
+  .text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
 }

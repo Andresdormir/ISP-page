@@ -1,11 +1,21 @@
+$color1 : #FF3374;
+$color2 : #FF7D33;
+$color3 : #142749;
+$color4 : #999497;
+$color5 : #EC6120;
+$color6 : #80718F;
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .hidden {
   overflow: hidden;
+  display: none !important;
+  ;
 }
 
 .container {
@@ -16,6 +26,157 @@ body {
   height: 100vh;
 }
 
-.animate__fadeIn{
+.animate__fadeIn {
   animation-duration: 1s;
+}
+
+.bg-light {
+  background: $color3;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar {
+  background: $color3;
+}
+
+.navbar-nav a,
+.navbar-brand {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px !important;
+}
+
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  opacity: 0.5;
+}
+
+.navbar-toggler {
+  outline: none;
+
+  .fa-bars {
+    font-size: 30px;
+  }
+}
+
+
+.navbar-expand-lg .navbar-collapse {
+  flex-grow: 0;
+}
+
+.animate__fadeIn {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 34px !important;
+}
+
+.container-fluid button.navbar-toggler {
+  border-color: transparent;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.contains {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+
+  .btn {
+    color: white;
+    border-color: black;
+    max-width: 200px;
+    min-width: 100px;
+    font-size: 1.6rem;
+  }
+}
+
+#About-Us {
+  background-color: $color4;
+  padding: 8%;
+
+  .containerxd {
+    justify-content: flex-start;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 34px !important;
+    margin: 0px;
+  }
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 200px;
+    margin-bottom: 60px;
+  }
+}
+
+i {
+  text-align: center;
+  img {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
+
+
+#carousel {
+  padding: 5% 5%;
+  text-align: center;
+   h2 {
+    margin-top: 20px;
+   }
+}
+
+
+
+
+.carousel-item .img-cont {
+  width: 200px;
+  margin: 0 auto;
+  img {
+    border-radius: 100%;
+    object-fit: contain;
+    width: inherit;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
 }
